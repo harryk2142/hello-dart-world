@@ -30,6 +30,20 @@ void main(List<String> arguments) {
   printVar(dynamicVar);
   dynamicVar = 123;
   printVar(dynamicVar);
+
+  var status = Status.a;
+  printList(status);
+
+  printVar(Status);
+
+  var mapA = {'A': 'A-Value'};
+  printList(mapA);
+}
+
+enum Status {
+  a,
+  b,
+  c,
 }
 
 void printVar(Object a) {
